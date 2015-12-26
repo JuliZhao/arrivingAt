@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="OtherCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户.png" translatesAutoresizingMaskIntoConstraints="NO" id="qR4-2m-4N2">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qR4-2m-4N2" secondAttribute="height" id="FgN-lo-JSD"/>
+                            <constraint firstAttribute="height" constant="50" id="cqu-MV-i3U"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlU-j1-6sy">
+                        <rect key="frame" x="65" y="5" width="30" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Ywr-Xd-8cp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JP-Rp-ES7">
+                        <rect key="frame" x="109" y="5" width="30" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Q9E-ae-CGV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLb-Ws-oBR">
+                        <rect key="frame" x="80" y="5" width="44" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="TDc-Fb-M8D"/>
+                            <constraint firstAttribute="width" constant="44" id="oed-hc-VIa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="2JP-Rp-ES7" firstAttribute="top" secondItem="jLb-Ws-oBR" secondAttribute="top" id="0MH-NF-QFP"/>
+                    <constraint firstItem="2JP-Rp-ES7" firstAttribute="leading" secondItem="jLb-Ws-oBR" secondAttribute="trailing" constant="-15" id="0fO-Jf-R8w"/>
+                    <constraint firstItem="vlU-j1-6sy" firstAttribute="leading" secondItem="qR4-2m-4N2" secondAttribute="trailing" constant="10" id="5bG-79-xop"/>
+                    <constraint firstItem="qR4-2m-4N2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="EmL-hR-gIZ"/>
+                    <constraint firstItem="qR4-2m-4N2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="FGb-0g-Oir"/>
+                    <constraint firstItem="vlU-j1-6sy" firstAttribute="bottom" secondItem="jLb-Ws-oBR" secondAttribute="bottom" id="Hup-kX-lkM"/>
+                    <constraint firstItem="jLb-Ws-oBR" firstAttribute="leading" secondItem="vlU-j1-6sy" secondAttribute="trailing" constant="-15" id="Tr6-M8-UIa"/>
+                    <constraint firstItem="vlU-j1-6sy" firstAttribute="top" secondItem="jLb-Ws-oBR" secondAttribute="top" id="lIy-Cz-hud"/>
+                    <constraint firstItem="vlU-j1-6sy" firstAttribute="top" secondItem="qR4-2m-4N2" secondAttribute="top" id="v77-1O-Jk6"/>
+                    <constraint firstItem="2JP-Rp-ES7" firstAttribute="bottom" secondItem="jLb-Ws-oBR" secondAttribute="bottom" id="xiL-0D-H51"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="contentLab" destination="jLb-Ws-oBR" id="p1i-Uf-ARK"/>
+                <outlet property="imgView" destination="qR4-2m-4N2" id="tsJ-ax-Tyc"/>
+                <outlet property="myContentHeight" destination="TDc-Fb-M8D" id="2n4-rD-jOi"/>
+                <outlet property="myContentWidth" destination="oed-hc-VIa" id="XhM-KH-nsK"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="400"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="用户.png" width="1024" height="1024"/>
+    </resources>
+</document>

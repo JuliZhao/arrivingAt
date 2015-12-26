@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="MyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLp-Wo-ePm">
+                        <rect key="frame" x="220" y="5" width="30" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="zgV-3u-CkJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-uK-HvY">
+                        <rect key="frame" x="176" y="5" width="30" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="r4B-KF-mnp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ4-bo-9wj">
+                        <rect key="frame" x="191" y="5" width="44" height="50"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1775760713" green="0.82442530700000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="1D7-0s-pzn"/>
+                            <constraint firstAttribute="height" constant="50" id="7Ti-hU-49P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户.png" translatesAutoresizingMaskIntoConstraints="NO" id="jCM-AQ-Jzd">
+                        <rect key="frame" x="260" y="5" width="50" height="50"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="7go-d4-kNA"/>
+                            <constraint firstAttribute="width" secondItem="jCM-AQ-Jzd" secondAttribute="height" id="MhF-R8-uvg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="bQE-uK-HvY" firstAttribute="top" secondItem="BQ4-bo-9wj" secondAttribute="top" id="Clg-kU-enh"/>
+                    <constraint firstItem="eLp-Wo-ePm" firstAttribute="top" secondItem="BQ4-bo-9wj" secondAttribute="top" id="EHR-fB-Ix0"/>
+                    <constraint firstItem="jCM-AQ-Jzd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="HMT-hs-CPq"/>
+                    <constraint firstItem="eLp-Wo-ePm" firstAttribute="leading" secondItem="BQ4-bo-9wj" secondAttribute="trailing" constant="-15" id="OJq-A8-Dm6"/>
+                    <constraint firstItem="eLp-Wo-ePm" firstAttribute="top" secondItem="jCM-AQ-Jzd" secondAttribute="top" id="Ps0-Y2-B49"/>
+                    <constraint firstItem="bQE-uK-HvY" firstAttribute="bottom" secondItem="BQ4-bo-9wj" secondAttribute="bottom" id="Zgu-aJ-QkQ"/>
+                    <constraint firstItem="jCM-AQ-Jzd" firstAttribute="leading" secondItem="eLp-Wo-ePm" secondAttribute="trailing" constant="10" id="ZzB-6c-SZQ"/>
+                    <constraint firstItem="BQ4-bo-9wj" firstAttribute="leading" secondItem="bQE-uK-HvY" secondAttribute="trailing" constant="-15" id="e30-sQ-W7o"/>
+                    <constraint firstItem="eLp-Wo-ePm" firstAttribute="bottom" secondItem="BQ4-bo-9wj" secondAttribute="bottom" id="eQu-cd-ezH"/>
+                    <constraint firstAttribute="trailing" secondItem="jCM-AQ-Jzd" secondAttribute="trailing" constant="10" id="kt8-zh-gsf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="contentHeight" destination="7Ti-hU-49P" id="exe-Vi-MaJ"/>
+                <outlet property="contentWidth" destination="1D7-0s-pzn" id="kRc-7W-FXg"/>
+                <outlet property="myContent" destination="BQ4-bo-9wj" id="zFC-i1-Fkn"/>
+                <outlet property="myImg" destination="jCM-AQ-Jzd" id="cyY-Bl-lyU"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="410"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="用户.png" width="1024" height="1024"/>
+    </resources>
+</document>

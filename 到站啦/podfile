@@ -1,0 +1,4 @@
+pod 'BaiduMapKit'
+pod 'AVOSCloud'
+pod 'AVOSCloudIM'
+pod 'SDWebImage'
